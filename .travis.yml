@@ -11,8 +11,4 @@ jobs:
   include:
   - name: "project-1"
     python: "3.5"
-#    env: 
-#     - TEST_SUITE1=3
-#     - TEST_SUITE2=4
-script: python -m pytest test/test_code.py
-#script: test/test_code.py
+script: test/test_code.py
