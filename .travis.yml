@@ -14,5 +14,5 @@ jobs:
 #    env: 
 #     - TEST_SUITE1=3
 #     - TEST_SUITE2=4
-script: pytest test/test_code.py
+script: python -m pytest test/test_code.py
 #script: test/test_code.py
