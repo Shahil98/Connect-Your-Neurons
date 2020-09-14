@@ -7,7 +7,9 @@
 
 
 [![Youtube](http://img.youtube.com/vi/H0h6bSO6XEI/0.jpg)](http://www.youtube.com/watch?v=H0h6bSO6XEI "111")
-Disclosure:
+
+
+#Disclosure:
 
 We know that some of you may not have the necessary knowledge to build this software, but we can assure you that you just require some basic fundamental skills like python and machine learning to work on this project and build the software. Plus, you will learn something new and cool.
 
