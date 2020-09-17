@@ -13,7 +13,7 @@ activation_function_list = []
 num_cell_list = []
 for item in json_data["layers"]:
     num_cell_list.append(item["number_of_neurons"])
-    activation_function_list.append(item["activation"])
+    activation_function_list.append(item["activation"].lower())
 print(num_cell_list)
 print(activation_function_list)
 opt = json_data["optimizer"]
