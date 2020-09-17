@@ -1,3 +1,14 @@
 {
-  "user_input":[0.03, 5, "relu", 3, 11, 5]
+  "number_of_layers": 5,
+   "layers": [
+                      { "number_of_neurons": 64,
+                         "activation": "relu"
+                       },
+                      {"number_of_neurons": 64,
+                         "activation": "sigmoid"},
+                      {"number_of_neurons": 64,
+                          "activation": "sigmoid"}
+      ],
+    "optimizer": "adam",
+    "loss_function": "MEAN SQUARED ERROR"
 }
