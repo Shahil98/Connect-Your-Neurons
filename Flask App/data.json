@@ -1,3 +1,13 @@
-{
-  "user_input":[0.03, 5, "relu", 3, 11, 5]
+{"number_of_layers":"3",
+  "optimizer":"Adam",
+  "loss_function":"Binary CrossEntropy",
+  "layers":
+  [{"number_of_neurons":"513",
+    "activation":"RELU"},
+    {"number_of_neurons":"513",
+      "activation":"RELU"},
+      {"number_of_neurons":"513",
+        "activation":"RELU"}
+  ]
+      
 }
