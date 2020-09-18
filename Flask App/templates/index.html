@@ -1,8 +1,171 @@
-<html>
-<head>
-<title>{{title}}</title>
-</head>
-<body>
-<h1>duck</h1>
-</body>
-</html>
+{% extends "layout.html" %}
+
+{% block css %}
+
+<!--Linking various required CSS files and JS scripts-->
+<link rel='stylesheet' type='text/css' href="{{ url_for('static',filename='bootstrap.css') }}">
+</link>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+{% endblock css %}
+
+{% block content %}
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+        aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="http://127.0.0.1:5000/">Create your network<span
+                        class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Convert Frameworks</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+        </ul>
+</nav>
+
+<!--div for getting number of layers, optimizer & loss function from users-->
+<div class="container">
+    <div class="mt-2 mb-4 row">
+        <div class="col">
+            <div class="row">
+                Number Of Layers:
+            </div>
+            <div class="row mt-1">
+                <input type="text" class="form-control" placeholder="" id="no_of_layers">
+            </div>
+        </div>
+        <div class="col ml-1">
+            <div class="row">
+                Optimizer:
+            </div>
+            <div class="row mt-1">
+                <select class="form-control" id="optimizer">
+                    <option>Adam</option>
+                    <option>SGD</option>
+                    <option>Adagrad</option>
+                    <option>RMSProp</option>
+                </select>
+            </div>
+        </div>
+        <div class="col ml-1">
+            <div class="row">
+                Loss Function:
+            </div>
+            <div class="row mt-1">
+                <select class="form-control" id="loss_function">
+                    <option>Binary CrossEntropy</option>
+                    <option>Categorical CrossEntropy</option>
+                    <option>Mean Absolute Error</option>
+                    <option>Mean Squared Error</option>
+                </select>
+            </div>
+        </div>
+        <div class="col ml-1">
+            <div class="row mt-4">
+                <button type="button" class="btn btn-primary" id="generate_layers_button"
+                    onclick="display_parameters()">Generate Layers</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--div for getting parameters for each layer. This div is accessed in the script section & is edited when the "Generate Layers" button is clicked-->
+<div id="network_parameters">
+
+</div>
+
+<!--div for a hidden form which sends the architecture information to the url "/get_keras_model"-->
+<div style="display: none;">
+    <form action="http://localhost:5000/get_keras_model" method='POST' id="form">
+        <input id="architecture_parameters" name="architecture_parameters" type="text">
+        <input id="submit_button" type="submit">
+    </form>
+</div>
+
+<!--JS section-->
+<script>
+    function send_architecture_specs(framework) {
+        /*
+         * Function to build a json string containing architecture parameters and sending it to appropriate url. 
+         */
+
+        var no_of_layers = document.getElementById("no_of_layers").value;
+        var optimizer = document.getElementById("optimizer").value;
+        var loss_function = document.getElementById("loss_function").value;
+        var no_of_neurons = new Array();
+        var activation_function = new Array();
+        var layers = new Array();
+
+        for (var i = 0; i < no_of_layers; i++) {
+
+            var layer = {};
+            layer["number_of_neurons"] = document.getElementById("no_of_neurons_" + i.toString()).value;
+            layer["activation"] = document.getElementById("activation_function_" + i.toString()).value;
+
+            layers.push(layer);
+        }
+
+        var architecture_specs = {};
+        architecture_specs["number_of_layers"] = no_of_layers;
+        architecture_specs["optimizer"] = optimizer;
+        architecture_specs["loss_function"] = loss_function;
+        architecture_specs["layers"] = layers;
+
+        var json_file = JSON.stringify(architecture_specs);
+
+        if (framework == 0) {
+            var framework_name = "keras";
+        }
+
+        document.getElementById("architecture_parameters").value = json_file;
+        document.getElementById("form").submit();
+
+    }
+
+    function update_slider(id) {
+        /*
+         * Function to update slider based on an the id of the slider.
+         */
+        document.getElementById("badge_" + id).innerHTML = document.getElementById("no_of_neurons_" + id).value;
+    }
+
+    function display_parameters() {
+        /*
+         * Function to update the network parameters block.
+         */
+        no_of_layers = parseInt(document.getElementById("no_of_layers").value);
+
+        let final_block = "<div class='container'>";
+
+        for (var i = 0; i < no_of_layers; i++) {
+            final_block = final_block + "<legend class='mt-2'>Layer " + i.toString() +
+                ": </legend><div class='row mt-2'><div class='col'><div class='row'><div class='col-sm-8'><input type='range' class='custom-range' id='no_of_neurons_" +
+                i.toString() +
+                "' min='1' max='1024' onchange='update_slider(" + i.toString() +
+                ")'></div><div class='col-sm-4'><span class='badge badge-pill badge-dark' id='badge_" + i.toString() +
+                "'>512</span></div></div></div><div class='col'><select class='form-control' id='activation_function_" +
+                i.toString() +
+                "'><option>RELU</option><option>TANH</option><option>SIGMOID</option></select></div></div>";
+        }
+
+        final_block = final_block +
+            "<div class='row mt-4 d-flex justify-content-center'><div class='col-sm-6'><div class='btn-group btn-group-toggle' data-toggle='buttons'><label class='btn btn-primary'><input type='checkbox' checked='' autocomplete='off'> Download PyTorch Model</label><label class='btn btn-primary' onclick='send_architecture_specs(0)'><input type='checkbox' autocomplete='off'> Download Keras Model</label></div></div></div></div>"
+
+        document.getElementById("network_parameters").innerHTML = final_block;
+    }
+</script>
+{% endblock content %}
