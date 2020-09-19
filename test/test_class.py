@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
-from main import create_keras_model
+from test.main import create_keras_model
 
 
 class TestClass:
@@ -44,4 +44,3 @@ class TestClass:
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
-            
