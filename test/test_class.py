@@ -1,3 +1,4 @@
+import json
 from test.main import create_keras_model
 
 
@@ -11,8 +12,8 @@ class TestClass:
             "loss_function": "Binary CrossEntropy",
             "layers": [{"number_of_neurons": "513", "activation": "RELU"}, {"number_of_neurons": "513", "activation": "RELU"}, {"number_of_neurons": "513", "activation": "RELU"}]
         }
-        model_test = create_keras_model(test_dict)
-        print(type(model_test))
+        output_dict = create_keras_model(test_dict)
+        model_test = json.loads(output_dict)
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
@@ -25,7 +26,8 @@ class TestClass:
             "loss_function": "Binary CrossEntropy",
             "layers": [{"number_of_neurons": "613", "activation": "RELU"}, {"number_of_neurons": "613", "activation": "RELU"}, {"number_of_neurons": "613", "activation": "RELU"}]
         }
-        model_test = create_keras_model(test_dict)
+        output_dict = create_keras_model(test_dict)
+        model_test = json.loads(output_dict)
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
@@ -38,7 +40,8 @@ class TestClass:
             "loss_function": "Binary CrossEntropy",
             "layers": [{"number_of_neurons": "713", "activation": "RELU"}, {"number_of_neurons": "713", "activation": "RELU"}, {"number_of_neurons": "713", "activation": "RELU"}]
         }
-        model_test = create_keras_model(test_dict)
+        output_dict = create_keras_model(test_dict)
+        model_test = json.loads(output_dict)
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
