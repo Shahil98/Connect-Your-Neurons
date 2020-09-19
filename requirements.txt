@@ -3,6 +3,6 @@ Flask==1.1.2
 pip==20.2.3
 Keras==2.4.3
 pandas==0.25.3
-scikit_learn==0.23.2
+scikit_learn==0.22.1
 wheel==0.35.1
 
