@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="Flask_App",
+    name="Connect Your Neurons",
     version="0.0.1",
     author="Group 10",
     author_email="srpatil4@ncsu.edu",
