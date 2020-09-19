@@ -5,10 +5,8 @@ install:
  - pip install -r requirements.txt
 git:
   depth: 50
-before_install:
- - chmod +x test/test_view.py
 jobs:
   include:
   - name: "project-1"
     python: "3.5"
-script: python -m pytest
+script: pytest -q test_class.py
