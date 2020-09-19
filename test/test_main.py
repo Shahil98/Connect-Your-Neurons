@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
 
 import sys
-sys.path.insert(0, "../Flask_App")
-from main import create_keras_model
+sys.path.insert(0, "../")
+from Flask_App.main import create_keras_model
 
 
 def test_one():
@@ -15,5 +14,6 @@ def test_one():
     }
     model_test = create_keras_model(test_dict)
     assert model_test == test_dict
+
 
 test_one()
