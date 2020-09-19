@@ -1,6 +1,7 @@
 
 import sys
 sys.path.insert(0, "../")
+print(sys.path)
 import code.main
 #from code.main import create_keras_model
 
