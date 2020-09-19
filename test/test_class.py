@@ -13,7 +13,8 @@ class TestClass:
         }
         model_test = create_keras_model(test_dict)
         for i in range(len(test_dict["layers"])):
-            #assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
+            print(i, type(i))
+            assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
 
     def test_two(self):
