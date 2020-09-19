@@ -53,10 +53,10 @@
             </div>
             <div class="row mt-1">
                 <select class="form-control" id="optimizer">
-                    <option>Adam</option>
+                    <option>ADAM</option>
                     <option>SGD</option>
-                    <option>Adagrad</option>
-                    <option>RMSProp</option>
+                    <option>ADAGRAD</option>
+                    <option>RMSPROP</option>
                 </select>
             </div>
         </div>
@@ -66,10 +66,10 @@
             </div>
             <div class="row mt-1">
                 <select class="form-control" id="loss_function">
-                    <option>Binary CrossEntropy</option>
-                    <option>Categorical CrossEntropy</option>
-                    <option>Mean Absolute Error</option>
-                    <option>Mean Squared Error</option>
+                    <option>BINARY CROSS ENTROPY</option>
+                    <option>CATEGORICAL CROSS ENTROPY</option>
+                    <option>MEAN ABSOLUTE ERROR</option>
+                    <option>MEAN SQUARED ERROR</option>
                 </select>
             </div>
         </div>
@@ -90,9 +90,15 @@
 
 <!--div for a hidden form which sends the architecture information to the url "/get_keras_model"-->
 <div style="display: none;">
-    <form action="http://localhost:5000/get_keras_model" method='POST' id="form">
-        <input id="architecture_parameters" name="architecture_parameters" type="text">
-        <input id="submit_button" type="submit">
+    <form action="http://localhost:5000/get_keras_model" method='POST' id="keras_form">
+        <input id="keras_architecture_parameters" name="keras_architecture_parameters" type="text">
+    </form>
+</div>
+
+<!--div for a hidden form which sends the architecture information to the url "/get_pytorch_model"-->
+<div style="display: none;">
+    <form action="http://localhost:5000/get_pytorch_model" method='POST' id="pytorch_form">
+        <input id="pytorch_architecture_parameters" name="pytorch_architecture_parameters" type="text">
     </form>
 </div>
 
@@ -131,8 +137,12 @@
             var framework_name = "keras";
         }
 
-        document.getElementById("architecture_parameters").value = json_file;
-        document.getElementById("form").submit();
+        if (framework == 1) {
+            var framework_name = "pytorch";
+        }
+
+        document.getElementById(framework_name + "_architecture_parameters").value = json_file;
+        document.getElementById(framework_name + "_form").submit();
 
     }
 
@@ -163,7 +173,7 @@
         }
 
         final_block = final_block +
-            "<div class='row mt-4 d-flex justify-content-center'><div class='col-sm-6'><div class='btn-group btn-group-toggle' data-toggle='buttons'><label class='btn btn-primary'><input type='checkbox' checked='' autocomplete='off'> Download PyTorch Model</label><label class='btn btn-primary' onclick='send_architecture_specs(0)'><input type='checkbox' autocomplete='off'> Download Keras Model</label></div></div></div></div>"
+            "<div class='row mt-4 d-flex justify-content-center'><div class='col-sm-6'><div class='btn-group btn-group-toggle' data-toggle='buttons'><label class='btn btn-primary' onclick='send_architecture_specs(0)'><input type='checkbox' autocomplete='off'> Download Keras Model</label><label class='btn btn-primary'  onclick='send_architecture_specs(1)'><input type='checkbox' checked='' autocomplete='off'> Download PyTorch Model</label></div></div></div></div>"
 
         document.getElementById("network_parameters").innerHTML = final_block;
     }
