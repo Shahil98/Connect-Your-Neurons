@@ -2,7 +2,7 @@
 
 import sys
 sys.path.insert(0, "../")
-from Flask_App.main import create_keras_model
+from code.main import create_keras_model
 
 
 class TestClass:
