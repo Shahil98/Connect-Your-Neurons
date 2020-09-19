@@ -9,4 +9,4 @@ jobs:
   include:
   - name: "project-1"
     python: "3.5"
-script: pytest -q test_class.py
+script: pytest -q test/test_class.py
