@@ -1,7 +1,8 @@
 
 import sys
 sys.path.insert(0, "../")
-from code.main import create_keras_model
+import code.main
+#from code.main import create_keras_model
 
 
 def test_one():
