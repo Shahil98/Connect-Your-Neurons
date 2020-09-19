@@ -9,5 +9,6 @@ jobs:
   include:
   - name: "project-1"
     python: "3.5"
-#script: pytest -q test/test_class.py
-script: pytest --import-mode=importlib -q test/test_main.py
+script: pytest -q test/test_class.py
+#script: pytest --import-mode=importlib -q test/test_class.py
+#script: python test/test_main.py
