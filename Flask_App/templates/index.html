@@ -76,7 +76,7 @@
         <div class="col ml-1">
             <div class="row mt-4">
                 <button type="button" class="btn btn-primary" id="generate_layers_button"
-                    onclick="display_parameters()">Generate Layers</button>
+                    onclick="displayParameters()">Generate Layers</button>
             </div>
         </div>
     </div>
@@ -104,7 +104,7 @@
 
 <!--JS section-->
 <script>
-    function send_architecture_specs(framework) {
+    function sendArchitectureSpecs(framework) {
         /*
          * Function to build a json string containing architecture parameters and sending it to appropriate url. 
          */
@@ -146,14 +146,14 @@
 
     }
 
-    function update_slider(id) {
+    function updateSlider(id) {
         /*
          * Function to update slider based on an the id of the slider.
          */
         document.getElementById("badge_" + id).innerHTML = document.getElementById("no_of_neurons_" + id).value;
     }
 
-    function display_parameters() {
+    function displayParameters() {
         /*
          * Function to update the network parameters block.
          */
@@ -165,7 +165,7 @@
             final_block = final_block + "<legend class='mt-2'>Layer " + i.toString() +
                 ": </legend><div class='row mt-2'><div class='col'><div class='row'><div class='col-sm-8'><input type='range' class='custom-range' id='no_of_neurons_" +
                 i.toString() +
-                "' min='1' max='1024' onchange='update_slider(" + i.toString() +
+                "' min='1' max='1024' onchange='updateSlider(" + i.toString() +
                 ")'></div><div class='col-sm-4'><span class='badge badge-pill badge-dark' id='badge_" + i.toString() +
                 "'>512</span></div></div></div><div class='col'><select class='form-control' id='activation_function_" +
                 i.toString() +
@@ -173,7 +173,7 @@
         }
 
         final_block = final_block +
-            "<div class='row mt-4 d-flex justify-content-center'><div class='col-sm-6'><div class='btn-group btn-group-toggle' data-toggle='buttons'><label class='btn btn-primary' onclick='send_architecture_specs(0)'><input type='checkbox' autocomplete='off'> Download Keras Model</label><label class='btn btn-primary'  onclick='send_architecture_specs(1)'><input type='checkbox' checked='' autocomplete='off'> Download PyTorch Model</label></div></div></div></div>"
+            "<div class='row mt-4 d-flex justify-content-center'><div class='col-sm-6'><div class='btn-group btn-group-toggle' data-toggle='buttons'><label class='btn btn-primary' onclick='sendArchitectureSpecs(0)'><input type='checkbox' autocomplete='off'> Download Keras Model</label><label class='btn btn-primary'  onclick='sendArchitectureSpecs(1)'><input type='checkbox' checked='' autocomplete='off'> Download PyTorch Model</label></div></div></div></div>"
 
         document.getElementById("network_parameters").innerHTML = final_block;
     }
