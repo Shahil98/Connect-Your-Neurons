@@ -12,7 +12,7 @@ def index():
 
 
 @app.route('/get_keras_model', methods=['POST'])
-def get_keras_model():
+def getKerasModel():
     """
     Returns a keras model to the
     user when a request is made to "/get_keras_model"
@@ -29,7 +29,7 @@ def get_keras_model():
 
 
 @app.route('/get_pytorch_model', methods=['POST'])
-def get_pytorch_model():
+def getPytorchModel():
     """
     Returns a pytorch model to the
     user when a request is made to "/get_pytorch_model"
@@ -38,7 +38,7 @@ def get_pytorch_model():
     return("Work In Progress")
 
 
-def create_keras_model(architecture_parameters):
+def createKerasModel(architecture_parameters):
     """
     Returns an architecture file for keras in json format.
 
