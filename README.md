@@ -6,27 +6,27 @@
   />
 </p>
 <p align="center">
-  <a href="https://github.com/starship/starship/actions"
+  <a href="https://img.shields.io/github/commit-activity/m/Zhuolin0212/Connect-Your-Neurons?style=plastic"
     ><img
       src="https://img.shields.io/github/commit-activity/m/Zhuolin0212/Connect-Your-Neurons?style=plastic"
       alt="GitHub commit activity"
   /></a>
-  <a href="https://crates.io/crates/starship"
+  <a href="https://img.shields.io/github/license/Zhuolin0212/Project1?style=plastic"
     ><img
       src="https://img.shields.io/github/license/Zhuolin0212/Project1?style=plastic"
       alt="GitHub"
   /></a>
-  <a href="https://repology.org/project/starship/versions"
+  <a href="https://img.shields.io/badge/version-0.01-brightgreen"
     ><img
       src="https://img.shields.io/badge/version-0.01-brightgreen"
       alt="Version"/></a
   ><br />
-  <a href="https://discord.gg/8Jzqu3T"
+  <a href="https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master)](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons"
     ><img
       src="https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master)](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons"
       alt="Build Status"
   /></a>
-  <a href="https://twitter.com/StarshipPrompt"
+  <a href="https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294"
     ><img
       src="https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294"
       alt="DOI"
