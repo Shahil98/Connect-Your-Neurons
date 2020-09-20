@@ -10,7 +10,9 @@ class TestClass:
             "number_of_layers": "3",
             "optimizer": "Adam",
             "loss_function": "Binary CrossEntropy",
-            "layers": [{"number_of_neurons": "513", "activation": "RELU"}, {"number_of_neurons": "513", "activation": "RELU"}, {"number_of_neurons": "513", "activation": "RELU"}]
+            "layers": [{"number_of_neurons": "513", "activation": "RELU"},
+                       {"number_of_neurons": "513", "activation": "RELU"},
+                       {"number_of_neurons": "513", "activation": "RELU"}]
         }
         output_dict = create_keras_model(test_dict)
         model_test = json.loads(output_dict)
@@ -24,7 +26,9 @@ class TestClass:
             "number_of_layers": "4",
             "optimizer": "Adam",
             "loss_function": "Binary CrossEntropy",
-            "layers": [{"number_of_neurons": "613", "activation": "RELU"}, {"number_of_neurons": "613", "activation": "RELU"}, {"number_of_neurons": "613", "activation": "RELU"}]
+            "layers": [{"number_of_neurons": "613", "activation": "RELU"},
+                       {"number_of_neurons": "613", "activation": "RELU"},
+                       {"number_of_neurons": "613", "activation": "RELU"}]
         }
         output_dict = create_keras_model(test_dict)
         model_test = json.loads(output_dict)
@@ -38,7 +42,9 @@ class TestClass:
             "number_of_layers": "5",
             "optimizer": "Adam",
             "loss_function": "Binary CrossEntropy",
-            "layers": [{"number_of_neurons": "713", "activation": "RELU"}, {"number_of_neurons": "713", "activation": "RELU"}, {"number_of_neurons": "713", "activation": "RELU"}]
+            "layers": [{"number_of_neurons": "713", "activation": "RELU"},
+                       {"number_of_neurons": "713", "activation": "RELU"},
+                       {"number_of_neurons": "713", "activation": "RELU"}]
         }
         output_dict = create_keras_model(test_dict)
         model_test = json.loads(output_dict)
