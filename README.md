@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master)](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294)
 
-#▶</strong> Youtube Link
+# ▶</strong> Youtube Link
 [![Youtube](http://img.youtube.com/vi/H0h6bSO6XEI/0.jpg)](http://www.youtube.com/watch?v=H0h6bSO6XEI "111")
 
 
