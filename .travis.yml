@@ -17,4 +17,5 @@ script:
   - pytest -q test/test_class.py
   - pytest --flake8
 after_success:
-  - codecov -t the-repository-upload-token
+  - codecov -t 6ba38871-5113-4f85-8d7a-56b97151d932
+  
