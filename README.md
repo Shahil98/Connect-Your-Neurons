@@ -53,8 +53,9 @@
 [comment]: <> ([![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294))
 =======
 >>>>>>> 4875d19dd8a0f9b6c98e38da57ecb78e02f12ba1
+
+>>>>>>> 75344f79e9df9c679f180ff7905048137f982ea0  
 -->
->>>>>>> 75344f79e9df9c679f180ff7905048137f982ea0
 >**Quick:** Quick prototyping  🚀  
 >**Convenience:** Convert models between different frameworks.  
 >**Support:** Works for every major deep learning framework.  
