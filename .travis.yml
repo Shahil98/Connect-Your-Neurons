@@ -1,3 +1,4 @@
+pip install coverage
 language:
   python
 after_success:
