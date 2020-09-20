@@ -30,7 +30,7 @@ To contribute code to our product, you must have a Github account so you could p
 ### Work On Your Own branch
 Once done and you have the code locally on the disk, you can get started. We advice to not work directly on the master branch, but to create a separate branch for each issue you are working on. That way you can easily switch between different work, and you can update each one for latest changes on upstream master individually.
 ### Write Code
-For writing the code just follow our [Python style guide](#Python-Styleguide). If there is something unclear of the style, just look at existing code which might help you to understand it better.
+For writing the code just follow our Python and JavaScript style guides. If there is something unclear of the style, just look at existing code which might help you to understand it better.
 
 ## Style Guide 
 
@@ -40,6 +40,33 @@ For writing the code just follow our [Python style guide](#Python-Styleguide). I
 * Use lower camel case to write function names for e.g. 'createKerasModel'
 * Use upper camel case to write class names for e.g. 'MyClass'
 * Try to select class, function and variable names that are meaningful wherever possible instead of using names like x, y, a etc
+* Comment as much as you can. Write comments for each function stating what it does, what are it's input parameters and what are it's outputs. An example for comments in a function can be seen below:
+```
+def add(num1, num2):
+    """
+    Function to add two integers.
+
+    Parameters
+    ----------
+    num1: int
+        first number
+    num2: int
+        second number
+
+    Returns
+    -------
+    int
+        an integer which is the sum of input integers
+    """
+
+    return(num1 + num2)
+```
+
+### JavaScript Style Guide
+* Give variable names as words in lowercase seperated by underscores for e.g. 'model_json'
+* Use lower camel case to write function names for e.g. 'createKerasModel'
+* Try to select function and variable names that are meaningful wherever possible instead of using names like x, y, a etc
+* Use [js-beautify](https://github.com/beautify-web/js-beautify) as a code formatter. We are using 'Beautify' extension in VS Code which implements js-beautify.
 
 ### Git Commit Messages
 
