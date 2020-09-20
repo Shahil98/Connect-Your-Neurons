@@ -8,6 +8,14 @@
 # ▶</strong> Youtube Link
 [![Youtube](http://img.youtube.com/vi/H0h6bSO6XEI/0.jpg)](http://www.youtube.com/watch?v=H0h6bSO6XEI "111")
 
+# Installation & Getting Started
+1) Clone this repository
+```
+git clone https://github.com/Zhuolin0212/Connect-Your-Neurons.git
+```
+2) Execute ```pip install -r requirements.txt``` to install all necessary libraries.
+3) Open Flask_App folder and execute ```set FLASK_APP=main.py``` command in cmd if you are using windows or in bash shell if you are using either Linux or Mac.
+4) Execute ```flask run``` command in cmd if you are using windows or in bash shell if you are using either Linux or Mac to start the application at ```http://localhost:5000```.
 
 # Disclosure:
 
