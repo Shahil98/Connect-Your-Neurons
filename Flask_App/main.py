@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     """
-    Returns index.html when a request is made to "/".
+    Function to render index.html when a request is made to "/".
     """
 
     return render_template('index.html', title='Connect Your Neurons')
@@ -14,12 +14,12 @@ def index():
 @app.route('/get_keras_model', methods=['POST'])
 def getKerasModel():
     """
-    Returns a keras model to the
+    Function to send a keras model architecture to the
     user when a request is made to "/get_keras_model"
     """
 
     json_file = request.form["keras_architecture_parameters"]
-    model_json = create_keras_model(eval(json_file))
+    model_json = createKerasModel(eval(json_file))
 
     with open("static/model.json", "w") as json_file:
         json_file.write(model_json)
@@ -31,7 +31,7 @@ def getKerasModel():
 @app.route('/get_pytorch_model', methods=['POST'])
 def getPytorchModel():
     """
-    Returns a pytorch model to the
+    Function to send a pytorch model to the
     user when a request is made to "/get_pytorch_model"
     """
 
@@ -40,12 +40,17 @@ def getPytorchModel():
 
 def createKerasModel(architecture_parameters):
     """
-    Returns an architecture file for keras in json format.
+    Function to create a keras architecture file based on input parameters.
 
     Parameters
     ----------
     architecture_parameters: dictionary
         Dictionary describing model architecture parameters
+
+    Returns
+    -------
+    json
+        json file describing model architecture that can be used by keras
     """
 
     import tensorflow as tf
