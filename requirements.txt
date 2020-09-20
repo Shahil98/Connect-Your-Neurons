@@ -6,3 +6,4 @@ pandas==0.25.3
 scikit_learn==0.22.1
 wheel==0.35.1
 tensorflow
+pytest-flake8

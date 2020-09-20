@@ -12,7 +12,7 @@ jobs:
   - name: "project-1"
     python: "3.5"
 script:
-  - pytest -q test/test_class.py
+  - pytest -q --flake8 test/test_class.py
   - coverage test/test_class.py
 after_success:
   - bash <(curl -s https://codecov.io/bash)
