@@ -34,11 +34,15 @@
 </p>
 
 
+<<<<<<< HEAD
+# Connect Your Neurons
+=======
+>>>>>>> 4875d19dd8a0f9b6c98e38da57ecb78e02f12ba1
 
->**Quick:** Quick prototyping  🚀
->**Convenience:** Convert models between different frameworks.
->**Support:** Works for every major deep learning framework.
->**Easy:** Interactive GUI.
+>**Quick:** Quick prototyping  🚀  
+>**Convenience:** Convert models between different frameworks.  
+>**Support:** Works for every major deep learning framework.  
+>**Easy:** Interactive GUI.  
 
 # ▶</strong> Youtube Link
 [![Youtube](http://img.youtube.com/vi/H0h6bSO6XEI/0.jpg)](http://www.youtube.com/watch?v=H0h6bSO6XEI "111")
