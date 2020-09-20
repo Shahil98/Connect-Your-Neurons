@@ -1,7 +1,5 @@
 language:
   python
-after_success:
-  - bash <(curl -s https://codecov.io/bash)
 python:
  - "3.5"
 install:
@@ -14,5 +12,5 @@ jobs:
   - name: "project-1"
     python: "3.5"
 script: coverage -q test/test_class.py
-#script: pytest --import-mode=importlib -q test/test_class.py
-#script: python test/test_main.py
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
