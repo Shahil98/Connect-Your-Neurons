@@ -7,3 +7,4 @@ scikit_learn==0.22.1
 wheel==0.35.1
 tensorflow
 pytest-flake8
+coverage
