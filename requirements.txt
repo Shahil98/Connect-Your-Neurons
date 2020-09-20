@@ -1,10 +1,5 @@
 pytest==6.0.1
 Flask==1.1.2
-pip==20.2.3
-Keras==2.4.3
-pandas==0.25.3
-scikit_learn==0.22.1
-wheel==0.35.1
-tensorflow
+tensorflow==2.1.0
 pytest-flake8
 coverage
