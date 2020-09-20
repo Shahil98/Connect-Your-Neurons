@@ -14,5 +14,5 @@
 We know that some of you may not have the necessary knowledge to build this software, but we can assure you that you just require some basic fundamental skills like python and machine learning to work on this project and build the software. Plus, you will learn something new and cool.
 
 # 📝 License
-Copyright © 2019-present, [Starship Contributors](https://github.com/starship/starship/graphs/contributors).<br>
-This project is [MIT](https://github.com/starship/starship/blob/master/LICENSE) licensed.
+Copyright © 2020-present, [Contributors](https://github.com/starship/starship/graphs/contributors).<br>
+This project is [MIT](https://github.com/Zhuolin0212/Connect-Your-Neurons/blob/master/LICENSE) licensed.
