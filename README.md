@@ -11,7 +11,7 @@
       src="https://img.shields.io/github/commit-activity/m/Zhuolin0212/Connect-Your-Neurons?style=plastic"
       alt="GitHub commit activity"
   /></a>
-  <a href="https://img.shields.io/github/license/Zhuolin0212/Project1?style=plastic"
+  <a href="https://github.com/Zhuolin0212/Connect-Your-Neurons/blob/master/LICENSE"
     ><img
       src="https://img.shields.io/github/license/Zhuolin0212/Project1?style=plastic"
       alt="GitHub"
