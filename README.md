@@ -23,7 +23,7 @@
   ><br />
   <a href="https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master)](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons"
     ><img
-      src="https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master)](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons"
+      src="https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master"
       alt="Build Status"
   /></a>
  <a href="https://doi.org/10.5281/zenodo.4023294"
