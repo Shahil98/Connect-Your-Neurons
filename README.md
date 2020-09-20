@@ -31,6 +31,9 @@
       src="https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg" 
       alt="DOI"
  ></a>
+ <a href="https://codecov.io/gh/Zhuolin0212/Connect-Your-Neurons"
+    ><img src="https://codecov.io/gh/Zhuolin0212/Connect-Your-Neurons/branch/master/graph/badge.svg" 
+ /></a>
 </p>
 
 <!-- This is commented out. 
