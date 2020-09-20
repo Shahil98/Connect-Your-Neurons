@@ -33,8 +33,8 @@
  ></a>
 </p>
 
+<!-- This is commented out. 
 
-<<<<<<< HEAD
 # Connect Your Neurons
 [comment]: <> (![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Zhuolin0212/Connect-Your-Neurons?style=plastic))
 [comment]: <> (![GitHub](https://img.shields.io/github/license/Zhuolin0212/Project1?style=plastic))
@@ -43,7 +43,7 @@
 [comment]: <> ([![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294))
 =======
 >>>>>>> 4875d19dd8a0f9b6c98e38da57ecb78e02f12ba1
-
+-->
 >**Quick:** Quick prototyping  🚀  
 >**Convenience:** Convert models between different frameworks.  
 >**Support:** Works for every major deep learning framework.  
