@@ -1,4 +1,5 @@
 # Test
 
-Contains test_code.py which is used for testing functions present in python files of the code folder of this repository.
+- Contains test code which is used for testing functions present in python files of this repository.  
+- pytest used for unit testing.
 
