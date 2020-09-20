@@ -1,5 +1,6 @@
 import json
-from test.main import create_keras_model
+from Flask_App.main import createKerasModel
+# from test.main import create_keras_model
 
 
 class TestClass:
@@ -14,7 +15,7 @@ class TestClass:
                        {"number_of_neurons": "513", "activation": "RELU"},
                        {"number_of_neurons": "513", "activation": "RELU"}]
         }
-        output_dict = create_keras_model(test_dict)
+        output_dict = createKerasModel(test_dict)
         model_test = json.loads(output_dict)
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
@@ -30,7 +31,7 @@ class TestClass:
                        {"number_of_neurons": "613", "activation": "RELU"},
                        {"number_of_neurons": "613", "activation": "RELU"}]
         }
-        output_dict = create_keras_model(test_dict)
+        output_dict = createKerasModel(test_dict)
         model_test = json.loads(output_dict)
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
@@ -46,7 +47,7 @@ class TestClass:
                        {"number_of_neurons": "713", "activation": "RELU"},
                        {"number_of_neurons": "713", "activation": "RELU"}]
         }
-        output_dict = create_keras_model(test_dict)
+        output_dict = createKerasModel(test_dict)
         model_test = json.loads(output_dict)
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
