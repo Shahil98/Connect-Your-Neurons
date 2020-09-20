@@ -57,7 +57,7 @@
 >>>>>>> 75344f79e9df9c679f180ff7905048137f982ea0  
 -->
 >**Quick:** Quick prototyping  🚀  
->**Convenience:** Convert models between different frameworks.  
+>**Convenience:** Convert trained models between different frameworks on the go.  
 >**Support:** Works for every major deep learning framework.  
 >**Easy:** Interactive GUI.  
 
