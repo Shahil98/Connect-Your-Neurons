@@ -13,8 +13,11 @@
 
 We know that some of you may not have the necessary knowledge to build this software, but we can assure you that you just require some basic fundamental skills like python and machine learning to work on this project and build the software. Plus, you will learn something new and cool.
 
-# Project
-
+# Features For Our Application
+## Generate an architecture in keras, pytorch etc based on parameters provided
+## Convert a keras architecture to pytorch & vice versa
+## Convert a trained keras model to pytorch and vice versa by providing an architecture file and weights.
+## Given parameters and architecture train a model on cloud and ship back the architecture & weights to the customer.
 # 📝 License
 Copyright © 2020-present, [Contributors](https://github.com/Zhuolin0212/Connect-Your-Neurons/graphs/contributors).<br>
 This project is [MIT](https://github.com/Zhuolin0212/Connect-Your-Neurons/blob/master/LICENSE) licensed.
