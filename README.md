@@ -1,3 +1,10 @@
+<p align="center">
+  <img
+    width="400"
+    src="https://raw.githubusercontent.com/starship/starship/master/media/logo.png"
+    alt="Connect-Your-Neurons"
+  />
+</p>
 # Connect Your Neurons
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Zhuolin0212/Connect-Your-Neurons?style=plastic)
 ![GitHub](https://img.shields.io/github/license/Zhuolin0212/Project1?style=plastic)
