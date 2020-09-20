@@ -6,12 +6,13 @@ python:
  - "3.5"
 install:
  - pip install -r requirements.txt
+ - pip install coverage
 git:
   depth: 50
 jobs:
   include:
   - name: "project-1"
     python: "3.5"
-script: pytest -q test/test_class.py
+script: coverage -q test/test_class.py
 #script: pytest --import-mode=importlib -q test/test_class.py
 #script: python test/test_main.py
