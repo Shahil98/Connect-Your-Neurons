@@ -64,7 +64,7 @@
 # ▶</strong> Youtube Link
 [![Youtube](http://img.youtube.com/vi/H0h6bSO6XEI/0.jpg)](http://www.youtube.com/watch?v=H0h6bSO6XEI "111")
 
-# Installation & Getting Started
+# 💡 Installation & Getting Started
 1) Clone this repository
 ```
 git clone https://github.com/Zhuolin0212/Connect-Your-Neurons.git
@@ -73,11 +73,11 @@ git clone https://github.com/Zhuolin0212/Connect-Your-Neurons.git
 3) Open Flask_App folder and execute ```set FLASK_APP=main.py``` command in cmd if you are using windows or in bash shell if you are using either Linux or Mac.
 4) Execute ```flask run``` command in cmd if you are using windows or in bash shell if you are using either Linux or Mac to start the application at ```http://localhost:5000```.
 
-# Disclosure:
+# 📢 Disclosure:
 
 We know that some of you may not have the necessary knowledge to build this software, but we can assure you that you just require some basic fundamental skills like python and machine learning to work on this project and build the software. Plus, you will learn something new and cool.
 
-# Features For Our Application
+# 🔮 Features For Our Application
 - Generate an architecture in keras, pytorch etc based on parameters provided
 - Convert a keras architecture to pytorch & vice versa
 - Convert a trained keras model to pytorch and vice versa by providing an architecture file and weights.
