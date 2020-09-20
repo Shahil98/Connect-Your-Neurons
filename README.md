@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    width="400"
+    width="200"
     src="https://raw.githubusercontent.com/Zhuolin0212/Connect-Your-Neurons/master/logo%20(2).png"
     alt="Connect-Your-Neurons"
   />
