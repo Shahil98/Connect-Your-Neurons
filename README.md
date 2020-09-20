@@ -1,7 +1,7 @@
 <p align="center">
   <img
     width="400"
-    src="https://raw.githubusercontent.com/starship/starship/master/media/logo.png"
+    src="https://raw.githubusercontent.com/Zhuolin0212/Connect-Your-Neurons/master/logo%20(2).png"
     alt="Connect-Your-Neurons"
   />
 </p>
