@@ -26,11 +26,11 @@
       src="https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons.svg?branch=master)](https://travis-ci.org/Zhuolin0212/Connect-Your-Neurons"
       alt="Build Status"
   /></a>
-  <a href="https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294"
-    ><img
-      src="https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg)](https://doi.org/10.5281/zenodo.4023294"
+ <a href="https://doi.org/10.5281/zenodo.4023294"
+    ><img 
+      src="https://zenodo.org/badge/DOI/10.5281/zenodo.4023294.svg" 
       alt="DOI"
-  /></a>
+ ></a>
 </p>
 
 
