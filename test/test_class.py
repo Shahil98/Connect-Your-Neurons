@@ -1,6 +1,16 @@
 import json
+from json import JSONEncoder
 from Flask_App.main import createKerasModel, kerasToIr
 import tensorflow
+import numpy
+
+
+class NumpyArrayEncoder(JSONEncoder):
+
+    def default(self, obj):
+        if isinstance(obj, numpy.ndarray):
+            return obj.tolist()
+        return JSONEncoder.default(self, obj)
 
 
 class TestClass:
@@ -57,8 +67,9 @@ class TestClass:
         model = tensorflow.keras.models.load_model("test/model.h5")
         (arch, weight) = kerasToIr(model)
         weight_data = {"array": weight}
+        # weight_final = json.dumps(weight_data, cls=NumpyArrayEncoder)
         with open('weight.json', 'w') as fp:
-            json.dump(weight_data, fp)
+            json.dump(weight_data, fp, cls=NumpyArrayEncoder)
         with open('test/architecture.json') as f:
             input_arch = json.load(f)
         assert arch == input_arch
