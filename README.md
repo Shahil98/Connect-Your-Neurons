@@ -76,7 +76,7 @@ git clone https://github.com/Zhuolin0212/Connect-Your-Neurons.git
 # ❓ What is Connect Your Neurons?
 Connect Your Neurons cen help users rapidly prototype for neural networks with GUI. It also can help deep learning user easily and efficiently convert trained models between frameworks.
 
-# 🙋 Why jump to us
+# 🙋 Why Jump To Us
 If you jump into our group project, you will enhance your deep network knowledge and learn more about neural network framework. This intermediate app will enable beginners of deep learning to better and more intuitive understanding of neural networks. And it make it easy to add new deep learning frameworks for users. 
 
 
