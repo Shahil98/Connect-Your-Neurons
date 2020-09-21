@@ -59,7 +59,7 @@ class TestClass:
         # output_arch = json.loads(arch)
         # with open('weight.json', 'w') as fp:
         #    json.dump(weight, fp)
-        print("=============X===============X================", type(weight))
-        with open('architecture.json') as f:
+        with open('test/architecture.json') as f:
             input_arch = json.load(f)
         assert arch == input_arch
+        print(weight)
