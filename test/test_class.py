@@ -54,9 +54,11 @@ class TestClass:
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
 
     def test_four(self):
-        model = tensorflow.keras.models.load_model("model.h5")
+        model = tensorflow.keras.models.load_model("test/model.h5")
         (arch, weight) = kerasToIr(model)
         output_arch = json.loads(arch)
+        with open('weight.json', 'w') as fp:
+            json.dump(weight, fp)
         with open('architecture.json') as f:
             input_arch = json.load(f)
         assert output_arch == input_arch
