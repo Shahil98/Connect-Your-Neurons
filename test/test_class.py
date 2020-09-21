@@ -67,9 +67,10 @@ class TestClass:
         model = tensorflow.keras.models.load_model("test/model.h5")
         (arch, weight) = kerasToIr(model)
         weight_data = {"array": weight}
-        # weight_final = json.dumps(weight_data, cls=NumpyArrayEncoder)
-        with open('weight.json', 'w') as fp:
-            json.dump(weight_data, fp, cls=NumpyArrayEncoder)
-        with open('test/architecture.json') as f:
-            input_arch = json.load(f)
-        assert arch == input_arch
+        weight_final = json.dumps(weight_data, cls=NumpyArrayEncoder)
+        with open('test/architecture.json') as fa:
+            arch_check = json.load(fa)
+        assert arch == arch_check
+        with open('test/weights.json') as fw:
+            weight_check = json.load(fw)
+        assert weight_final == weight_check
