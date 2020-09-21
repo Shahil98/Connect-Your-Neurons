@@ -140,7 +140,7 @@
         if (framework == 1) {
             var framework_name = "pytorch";
         }
-
+        console.log(json_file);
         document.getElementById(framework_name + "_architecture_parameters").value = json_file;
         document.getElementById(framework_name + "_form").submit();
 
@@ -162,14 +162,14 @@
         let final_block = "<div class='container'>";
 
         for (var i = 0; i < no_of_layers; i++) {
-            final_block = final_block + "<legend class='mt-2'>Layer " + i.toString() +
+            final_block = final_block + "<legend class='mt-2'>Layer " + (i+1).toString() +
                 ": </legend><div class='row mt-2'><div class='col'><div class='row'><div class='col-sm-8'><input type='range' class='custom-range' id='no_of_neurons_" +
                 i.toString() +
                 "' min='1' max='1024' onchange='updateSlider(" + i.toString() +
                 ")'></div><div class='col-sm-4'><span class='badge badge-pill badge-dark' id='badge_" + i.toString() +
                 "'>512</span></div></div></div><div class='col'><select class='form-control' id='activation_function_" +
                 i.toString() +
-                "'><option>RELU</option><option>TANH</option><option>SIGMOID</option></select></div></div>";
+                "'><option>RELU</option><option>TANH</option><option>SIGMOID</option><option>SOFTMAX</option></select></div></div>";
         }
 
         final_block = final_block +
