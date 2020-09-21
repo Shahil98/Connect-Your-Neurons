@@ -93,7 +93,7 @@ We know that some of you may not have the necessary knowledge to build this soft
 Copyright © 2020-present, [Contributors](https://github.com/Zhuolin0212/Connect-Your-Neurons/graphs/contributors).<br>
 This project is [MIT](https://github.com/Zhuolin0212/Connect-Your-Neurons/blob/master/LICENSE) licensed.
 
-## Self-assessment 
+# ✅ Self-assessment 
 |What | Notes|score 0..4<br>(0=no, 2=ok, 4=wow!)|
 |-----|------|------|
 |Misc | Group members attended tutorial sessions|4|
