@@ -1,6 +1,6 @@
 import json
-from Flask_App.main import createKerasModel
-# from test.main import create_keras_model
+from Flask_App.main import createKerasModel, kerasToIr
+import tensorflow
 
 
 class TestClass:
@@ -52,3 +52,11 @@ class TestClass:
         for i in range(len(test_dict["layers"])):
             assert int(test_dict["layers"][i]["number_of_neurons"]) == model_test["config"]["layers"][i]["config"]["units"]
             assert test_dict["layers"][i]["activation"].lower() == model_test["config"]["layers"][i]["config"]["activation"]
+
+    def test_four(self):
+        model = tensorflow.keras.models.load_model("model.h5")
+        (arch, weight) = kerasToIr(model)
+        output_arch = json.loads(arch)
+        with open('architecture.json') as f:
+            input_arch = json.load(f)
+        assert output_arch == input_arch
