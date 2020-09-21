@@ -72,6 +72,12 @@ git clone https://github.com/Zhuolin0212/Connect-Your-Neurons.git
 2) Execute ```pip install -r requirements.txt``` to install all necessary libraries.
 3) Open Flask_App folder and execute ```set FLASK_APP=main.py``` command in cmd if you are using windows or in bash shell if you are using either Linux or Mac.
 4) Execute ```flask run``` command in cmd if you are using windows or in bash shell if you are using either Linux or Mac to start the application at ```http://localhost:5000```.
+# What is Connect Your Neurons?
+Connect Your Neurons cen help users rapidly prototype for neural networks with GUI. It also can help deep learning user easily and efficiently convert trained models between frameworks.
+
+# Why jump to us
+If you jump into our group project, you will enhance your deep network knowledge and learn more about neural network framework. This intermediate app will enable beginners of deep learning to better and more intuitive understanding of neural networks. And it make it easy to add new deep learning frameworks for users. 
+
 
 # 📢 Disclosure
 
