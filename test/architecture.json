@@ -1,0 +1,1 @@
+{"optimizer": "RMSPROP", "loss_function": "CATEGORICAL CROSS ENTROPY", "number_of_layers": "3", "layers": [{"number_of_neurons": "10", "activation": "RELU", "type": "DENSE", "name": "layer_1"}, {"number_of_neurons": "10", "activation": "RELU", "type": "DENSE", "name": "layer_2"}, {"number_of_neurons": "10", "activation": "SOFTMAX", "type": "DENSE", "name": "layer_3"}]}
