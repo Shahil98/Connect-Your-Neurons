@@ -35,7 +35,6 @@
     ><img src="https://codecov.io/gh/Zhuolin0212/Connect-Your-Neurons/branch/master/graph/badge.svg" 
  /></a>
 </p>
-<p></p>
 <!-- This is commented out. 
 
 <<<<<<< HEAD
