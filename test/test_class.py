@@ -56,9 +56,9 @@ class TestClass:
     def test_four(self):
         model = tensorflow.keras.models.load_model("test/model.h5")
         (arch, weight) = kerasToIr(model)
-        output_arch = json.loads(arch)
+        # output_arch = json.loads(arch)
         with open('weight.json', 'w') as fp:
             json.dump(weight, fp)
         with open('architecture.json') as f:
             input_arch = json.load(f)
-        assert output_arch == input_arch
+        assert arch == input_arch
