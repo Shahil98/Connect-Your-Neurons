@@ -73,4 +73,5 @@ class TestClass:
         assert arch == arch_check
         with open('test/weights.json') as fw:
             weight_check = json.load(fw)
+        print(type(weight_check))
         assert weight_final == weight_check
