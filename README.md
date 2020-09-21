@@ -64,9 +64,6 @@
 # ▶</strong> Youtube Link
 [![Youtube](http://img.youtube.com/vi/H0h6bSO6XEI/0.jpg)](http://www.youtube.com/watch?v=H0h6bSO6XEI "111")
 
-# 🔎 About
-This project is designed to help users easily convert trained model between frameworks. It is very simple for users to get on using it, and no much related professional knowledge required. 
-
 # 💡 Installation & Getting Started
 1) Clone this repository
 ```
