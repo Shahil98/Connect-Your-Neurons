@@ -55,11 +55,12 @@ def add(num1, num2):
 
     Returns
     -------
-    int
+    sum
         an integer which is the sum of input integers
     """
 
-    return(num1 + num2)
+    sum = num1 + num2
+    return(sum)
 ```
 
 ### JavaScript Style Guide
