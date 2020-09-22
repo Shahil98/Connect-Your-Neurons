@@ -112,3 +112,6 @@ If you jump to our group project, you will be contributing to a cool project and
 # 📝 License
 Copyright © 2020-present, [Contributors](https://github.com/Zhuolin0212/Connect-Your-Neurons/graphs/contributors).<br>
 This project is [MIT](https://github.com/Zhuolin0212/Connect-Your-Neurons/blob/master/LICENSE) licensed.
+
+# :ballot_box_with_check: Self-Assessment 
+[Check assessment](https://github.com/Zhuolin0212/Connect-Your-Neurons/blob/master/PROJ1-selfAssessment.md)
