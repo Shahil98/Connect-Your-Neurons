@@ -1,7 +1,7 @@
 # Testing  
 #### Contains test code which is used for testing functions present in python files of this repository.   
 
-## Two types of testing techniques used:  
+### Two types of testing techniques used:  
 **1. Whitebox Testing**
   - Used for unit-testing.
   - Pytest used as the testing tool.
