@@ -99,10 +99,10 @@ Model Weights Dictionary For Intermediate Representation
                    "layer_1": [ bias values for layer_1 ],
                    ...
                   ],
-  "kernel_weights: [
-                    "layer_1": [ kernel_weights for layer_2 ].
+  "kernel_weights": [
+                    "layer_1": [ kernel_weights for layer_1 ].
                     ...
-                   ]"
+                   ]
 }
 ```
 
