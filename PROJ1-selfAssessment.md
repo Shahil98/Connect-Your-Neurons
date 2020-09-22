@@ -6,7 +6,7 @@
 || group meetings had a moderator that managed the round robin|4
 || group meeting moderator rotated among  the group|4
 || code conforms to some packaging standard|4
-|| code has can be downloaded from some standard package manager|2
+|| code has can be downloaded from some standard package manager|0
 | |workload is spread over the whole team (one team member is often Xtimes more productive than the others... but nevertheless, here is a track record that everyone is contributing a lot)|4|
 || Number of commits|4|
 || Number of commits: by different people|4|
@@ -31,7 +31,7 @@
 || Use of syntax checkers. |4|
 || Extensive use of syntax checkers. |4|
 || Use of code coverage |4|
-|| Extensive use of code coverage |4|
+|| Extensive use of code coverage |0|
 || other automated analysis tools|4|
 || Extensive use of  other automated analysis tools|0|
 || test cases exist|4|
